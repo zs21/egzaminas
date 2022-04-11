@@ -2,9 +2,9 @@
 
 :root {
     
-    --dark-grayish: hsl(270, 7%, 64%);
+    --dark-grayish: hsl(270, 2%, 35%);
     --light-magenta: hsl(293, 100%, 63%);
-    --light-grayish: hsl(270, 20%, 96%);
+    --light-grayish: hsl(240, 1%, 68%);
     --very-dark: hsl(274, 17%, 8%);
     --very-light-magenta: hsl(289, 100%, 72%);
 
@@ -54,6 +54,11 @@ nav {
 
 h5 {
     color: var(--light-magenta);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 .about {
@@ -62,30 +67,38 @@ h5 {
     
 }
 
-.header-container {
-    max-width: 55vw;
+
+
+.about-container {
+    min-width: 30%;
+    max-width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.header-container h5 {
-    
-}
 
 
-.header-background-image-container  {
+.about-image-container  {
     position: relative;
     top: -40px;
     
     z-index: -5;
 }
 
-.header-background-image-container img {
+.about-image-container img {
     position: absolute;
     max-height: 30vh;
 
 }
+
+section .about-image-container  {
+    position: relative;
+    top: 40px;
+    left: 30px;
+    z-index: -5;
+}
+
 
 button {
     cursor: pointer;
@@ -120,7 +133,7 @@ button {
     padding: 80px 20px 30px 20px;
 }
 
-.free-nft h3 {
+.free-nft h2 {
     margin-bottom: 20px;
     }
 
@@ -130,11 +143,87 @@ button {
         justify-content: space-between;
         gap: 20px;
         padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .company-container:first-child {
         display: none;
     }
 
+.auction {
+    margin-top: 50px;
+
+}
+
+.auction h2 {
+    margin-bottom: 20px;
+}
+
+.auction p {
+    padding: 5px;
+    color: var(--dark-grayish);
+}
+
+.auction p a {
+    color: var(--dark-grayish);
+}
+
+.auction-items {
+    display: flex;
+    color: none;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     
+}
+
+
+
+.auction-item-container {
+    background-color: var(--light-grayish);
+    border-radius: 20px;
+    
+}
+
+.auction-item-container a {
+    text-decoration: none;
+}
+
+.auction-item-info {
+    display: grid;
+    padding: 10px;
+}
+
+.grey-info {
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.small {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.auction .series {
+    color: orangered;
+}
+
+.item-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-description span {
+    display: flex;
+}
+
+section .about::before {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: var(--dark-grayish-vioolet);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+}
