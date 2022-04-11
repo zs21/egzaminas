@@ -14,9 +14,127 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+
+ body {
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    font-size: 18px;
+   
 }
 
 img {
     display: block;
 }
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 40px; 
+}
+
+.menu {
+    display: none;
+}
+
+.hamburger-toggle {
+    border: none;
+    background: none;
+}
+
+.hamburger-toggle img {
+    
+    height: 30px;
+    width: 30px;
+}
+
+h5 {
+    color: var(--light-magenta);
+}
+
+.about {
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.header-container {
+    max-width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-container h5 {
+    
+}
+
+
+.header-background-image-container  {
+    position: relative;
+    top: -40px;
+    
+    z-index: -5;
+}
+
+.header-background-image-container img {
+    position: absolute;
+    max-height: 30vh;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-sign-up {
+    position: relative;
+    background-color: white;
+    padding: 10px 30px;
+    border-style: none;
+    border-radius: 30px;
+    max-width: fit-content;
+}
+
+.button-sign-up::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(to right, red, yellow);
+    content: '';
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.free-nft {
+    background-image: url(./assets/background.svg);
+    margin-left: -20px;
+    margin-right: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px 30px 20px;
+}
+
+.free-nft h3 {
+    margin-bottom: 20px;
+    }
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .company-container:first-child {
+        display: none;
+    }
+
+    
