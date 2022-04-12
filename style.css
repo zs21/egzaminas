@@ -2,7 +2,7 @@
 
 :root {
     
-    --dark-grayish: hsl(270, 2%, 35%);
+    --dark-grayish: #59575b;
     --light-magenta: hsl(293, 100%, 63%);
     --light-grayish: hsl(240, 1%, 68%);
     --very-dark: hsl(274, 17%, 8%);
