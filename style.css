@@ -65,7 +65,7 @@ h1 {
 
 .about {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 50px;
     min-height: 30vh;
     
@@ -94,6 +94,7 @@ h1 {
     position: absolute;
     height: 100%;
 }
+
 
 
 
@@ -179,7 +180,9 @@ button {
 
 .auction {
     margin-top: 50px;
-
+    border-bottom: 1px solid var(--light-grayish);
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .auction h2 {
@@ -202,11 +205,17 @@ button {
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     }
 
+    .side-margin {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
   
 
 .auction-items::-webkit-scrollbar
@@ -257,7 +266,15 @@ button {
 }
 
 footer {
-    margin-top:  50px;
+    padding-top:  50px;
+    border-top: 1px solid var(--light-grayish);
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.footer-container {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer p {
@@ -269,6 +286,8 @@ footer p {
     gap: 15px;
     margin-bottom: 50px;
 }
+
+
 
 .footer-links {
     display: flex;
@@ -392,6 +411,20 @@ footer p {
         margin-right: 15px;
     }
 
+    .auction {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .auction-items {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .side-margin {
+        margin:0;
+    }
+
     .auction-item-container {
         width: fit-content;
         height: auto;
@@ -414,18 +447,22 @@ footer p {
         box-shadow: 10px 5px 15px var(--light-grayish);
     }
 
-    .line::before {
-        margin-left: 50px;
-        width:95vw;
-    }
+  
 
     .about-container .line::before {
         display: none;
     }
 
+    footer {
+        margin-left:0;
+        margin-right: 0;
+    }
+
     .footer-container {
         display: flex;
         justify-content: space-between;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .media a:hover {
