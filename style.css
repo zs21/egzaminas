@@ -64,7 +64,7 @@ h1 {
 .about {
     display: flex;
     margin-bottom: 50px;
-    
+    margin-top: 50px;
 }
 
 
@@ -92,6 +92,8 @@ h1 {
 
 }
 
+
+
 section .about-image-container  {
     position: relative;
     top: 40px;
@@ -99,6 +101,19 @@ section .about-image-container  {
     z-index: -5;
 }
 
+hr {
+    color: hsla(0, 0%, 64%, 0.3);;
+    z-index: 10;
+    margin-left: -20px;
+    margin-right: -20px;
+    min-width: 100vw;
+    border: solid;
+    border-width: 1px;
+}
+
+hr:last-child {
+    margin-top: -30px;
+}
 
 button {
     cursor: pointer;
@@ -217,13 +232,45 @@ button {
     display: flex;
 }
 
-section .about::before {
-    content: "";
-    width: 150px;
-    height: 1px;
-    background-color: var(--dark-grayish-vioolet);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -30px;
+footer {
+    margin-top:  50px;
 }
+
+footer p {
+    padding: 15px 0px;
+}
+
+.media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 50px;
+    margin-bottom: 50px;
+    
+
+}
+
+.links-container{
+ width: 25%;
+}
+
+.links-container h5 {
+    color: var(--dark-grayish);
+    margin-bottom: 30px;
+}
+
+.links-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .links-container a {
+        color: var(--dark-grayish);
+        text-decoration: none;
+    }
