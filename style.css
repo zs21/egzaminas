@@ -4,7 +4,7 @@
     
     --dark-grayish: #59575b;
     --light-magenta: hsl(293, 100%, 63%);
-    --light-grayish: hsl(240, 1%, 68%);
+    --light-grayish: #adadae;
     --very-dark: hsl(274, 17%, 8%);
     --very-light-magenta: hsl(289, 100%, 72%);
 
@@ -270,7 +270,17 @@ footer p {
     gap: 10px;
     }
 
-    .links-container a {
-        color: var(--dark-grayish);
-        text-decoration: none;
-    }
+.links-container a {
+    color: var(--dark-grayish);
+    text-decoration: none;
+}
+
+.copyright span {
+    display: flex;
+    gap: 10px;
+    color: var(--light-grayish);
+}
+
+.copyright span:last-child {
+    display: none;
+}
