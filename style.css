@@ -101,19 +101,19 @@ section .about-image-container  {
     z-index: -5;
 }
 
-hr {
-    color: hsla(0, 0%, 64%, 0.3);;
-    z-index: 10;
-    margin-left: -20px;
-    margin-right: -20px;
-    min-width: 100vw;
-    border: solid;
-    border-width: 1px;
-}
 
-hr:last-child {
-    margin-top: -30px;
-}
+
+ .line::before {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px var(--light-grayish);
+    position: absolute;
+    left: 0;
+    transform: translateY(-20px);
+    z-index: 1;
+} 
+
+
 
 button {
     cursor: pointer;
@@ -160,6 +160,11 @@ button {
         padding-top: 50px;
     }
 
+    .company-container {
+       max-width: 50%;
+       max-height: auto;
+    }
+
     .company-container:first-child {
         display: none;
     }
@@ -191,8 +196,6 @@ button {
     margin-bottom: 50px;
     
 }
-
-
 
 .auction-item-container {
     background-color: var(--light-grayish);
